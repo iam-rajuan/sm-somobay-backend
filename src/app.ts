@@ -46,7 +46,12 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 // Root Welcome Route
 app.get('/', (req: Request, res: Response) => {
   res.json({
-    name: 'Somity Management System - Centralized REST API Server',
+    organization: 'এস, এম ক্ষুদ্র সঞ্চয় ও ঋণদান সমবায় সমিতি লিঃ',
+    organizationEnglish: 'S.M. Khudra Sanchay O Rindan Samabay Samity Limited',
+    shortName: 'S.M. Somobay Somity (এস, এম)',
+    registrationNo: 'ট-ক ২৮৪০/২১',
+    headOffice: 'Elenga, Kalihati, Tangail, Bangladesh',
+    service: 'sm-somobay-backend-api',
     status: 'online',
     version: '1.0.0',
     documentation: '/api/v1/health',

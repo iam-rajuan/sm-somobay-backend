@@ -13,7 +13,10 @@ export const getHealthStatus = (req: Request, res: Response): void => {
   const dbState = mongoose.connection.readyState;
 
   const healthData = {
-    service: 'somity-backend-api',
+    service: 'sm-somobay-backend',
+    organization: 'এস, এম ক্ষুদ্র সঞ্চয় ও ঋণদান সমবায় সমিতি লিঃ',
+    registrationNo: 'ট-ক ২৮৪০/২১',
+    headOffice: 'Elenga, Kalihati, Tangail',
     status: 'healthy',
     version: '1.0.0',
     timestamp: new Date().toISOString(),
@@ -30,6 +33,6 @@ export const getHealthStatus = (req: Request, res: Response): void => {
     },
   };
 
-  sendSuccess(res, 'Somity Management System Backend REST API is running smoothly', healthData);
+  sendSuccess(res, 'S.M. Somobay Somity REST API is running smoothly', healthData);
 };
 

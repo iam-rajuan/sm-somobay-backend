@@ -1,7 +1,7 @@
 {
-  "name": "somity-backend",
+  "name": "sm-somobay-backend",
   "version": "1.0.0",
-  "description": "Somity Management System - Centralized REST API & Business Logic Server (Node.js, Express, TypeScript, MongoDB)",
+  "description": "S.M. Khudra Sanchay O Rindan Samabay Samity Limited - REST API Server",
   "main": "dist/server.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
